@@ -1,0 +1,98 @@
+
+.container{
+    /* width: 100%; */
+    margin: 10px;
+}
+.main{
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin-left: 10px;
+    /* width: 100%; */
+    border-radius: 7px;
+}
+
+h2{
+    margin: 10px 0px;
+}
+
+table{
+    width: 100%;
+    padding:10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead,th  {
+    background-color: lightgreen;
+    padding:15px;  
+    border-collapse: collapse;  
+}
+
+td{
+    padding: 15px;
+}
+
+tr{
+    border: 1px solid lightgray;
+}
+
+.search-table {
+    margin: auto 9px;
+}
+.input-section1{
+    margin-right: 200px;
+    padding: 10px 20px; 
+    width: 60%; 
+    gap: 10px;  
+}
+
+.input-section2{
+    padding: 13px 0 13px 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.addItemBtn{
+    background-color: rgb(37, 151, 37);
+    padding: 12px 20px; 
+    width: auto; 
+    margin: 2px; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 7px;
+}
+
+.editBtn{
+    color: rgb(4, 198, 4);
+    border: none;
+    background-color: white;
+}
+.deleteBtn{
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.yearerror{
+    margin: 10px;
+}
+
+.buttonerror{
+    margin: 7px 10px;
+}
+
+.spanerror{
+    color: red;
+    display: none;
+    font-size: 15px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+    <link rel="stylesheet" href="demo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Custom Table</h1>
+        <div class="main">
+            <h3>
+                Add item
+            </h3>
+            <div class="myForm">
+                <form id="myForm" style="display:flex;">
+                    <div class="yearerror">
+                        <input id="ename" name="ename" type="text" class="input-section1" placeholder="Enter Name"
+                            maxlength="256">
+                        <span class="spanerror" style="display:none; color:red;">Enter the Name</span>
+                    </div>
+                    <div class="yearerror">
+                        <input id="category" name="category" type="text" class="input-section1"
+                            placeholder="Enter Category" maxlength="256">
+                        <span class="spanerror" style="display:none; color:red;">Enter the Category</span>
+                    </div>
+                    <div class="yearerror">
+                        <input id="year" name="year" type="number" class="input-section1" placeholder="Enter Year">
+                        <span class="spanerror" style="display:none; color:red;">Enter the Year</span>
+
+                    </div>
+                    <div class="buttonerror">
+                        <button type="button" class="addItemBtn" onclick="addItems()"> Additem </button>
+                        <span class="spanerror">Please Enter all reuired fields</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Search for Item...</h2>
+            <input type="text" id="search" class="input-section2" placeholder="Search for Names.."
+                onkeyup="searchFun()">
+        </div>
+        <div class="search-table">
+
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortSNO()">S.NO </th>
+                        <th onclick="sortName()">Name <i id="sort-name-icon" class="fa fa-sort"></i></th>
+                        <th onclick="sortCategory()">Category <i id="sort-category-icon" class="fa fa-sort"></i></th>
+                        <th onclick="sortYear()">Year <i id="sort-year-icon" class="fa fa-sort"></i></th>
+                        <th>Edit Entry</th>
+                        <th>Delte Entry</th>
+                    </tr>
+                </thead>
+                <tbody id="linkTable">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+
+</html>
